@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Messenger.Cross</id>
+        <title>Messenger Cross</title>
+        <version>1.0</version>
+        <description>Event aggregation (Pub-Sub) library for Xamarin and .NET applications</description>
+        <authors>Diego Ponce de León</authors>
+        <projectUrl>https://github.com/xleon/Messenger</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <tags>Messenger, Event aggregation, pub, sub, publish, subscribe, xamarin, .net, C#</tags>
+    </metadata>
+    <files>
+        <file src="bin/Release/*.dll" target="lib/Xamarin.iOS10" />
+    </files>
+</package>
