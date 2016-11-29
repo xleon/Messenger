@@ -4,7 +4,7 @@
         <!-- Required elements-->
         <id>Messenger.Cross</id>
         <title>Messenger Cross</title>
-        <version>1.0</version>
+        <version>1.0.2</version>
         <description>Event aggregation (Pub-Sub) library for Xamarin and .NET applications</description>
         <authors>Diego Ponce de León</authors>
         <projectUrl>https://github.com/xleon/Messenger</projectUrl>
@@ -12,6 +12,19 @@
         <tags>Messenger, Event aggregation, pub, sub, publish, subscribe, xamarin, .net, C#</tags>
     </metadata>
     <files>
-        <file src="bin/Release/*.dll" target="lib/Xamarin.iOS10" />
+        <!-- portable -->
+        <file src="bin/Release/Messenger.dll" target="lib/portable-net45+win+wp80+Wpa81+MonoAndroid10+MonoTouch1+Xamarin.iOS/Messenger.dll" />
+        <file src="./*.cs" target="src/Messenger" />
+        <file src="./**/*.cs" target="src/Messenger" />
+
+        <!-- mac -->
+        <file src="bin/Release/Messenger.dll" target="lib/Xamarin.Mac20" />
+
+        <!-- ios -->
+        <file src="bin/Release/Messenger.dll" target="lib/Xamarin.iOS10" />
+        <file src="bin/Release/Messenger.dll" target="lib/MonoTouch10" />
+
+        <!-- android -->
+        <file src="bin/Release/Messenger.dll" target="lib/MonoAndroid10" />
     </files>
 </package>
